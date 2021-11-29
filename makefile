@@ -1,5 +1,8 @@
-a.out: main.o run_main.o func_select.o pstring.o
-	gcc -g -o a.out main.o run_main.o func_select.o pstring.o
+#a.out: main.o run_main.o func_select.o pstring.o
+	#gcc -g -o a.out main.o run_main.o func_select.o pstring.o
+
+a.out: main.o run_main.o
+	gcc -no-pie -g -o a.out main.o run_main.o
 
 main.o: main.c pstring.h
 	gcc -g -c -o main.o main.c

@@ -21,5 +21,4 @@ void run_main() {
 	// select which function to run
 	scanf("%d", &opt);
 	run_func(opt, &p1, &p2);
-
 }
