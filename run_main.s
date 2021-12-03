@@ -1,3 +1,5 @@
+// 207375700 Racheli Lilach Lacham
+
 .extern printf
 .extern scanf
 
@@ -47,7 +49,7 @@ run_main:
     leaq -272(%rbp), %rsi    #the seconed parameter to scanf
     xorq %rax, %rax
     call scanf
-    leaq -273(%rbp),%r14
+    leaq -273(%rbp),%r15
 
     #get opt
     movq $scan_num, %rdi   #the first parameter to scanf
@@ -59,7 +61,7 @@ run_main:
     movq -16(%rbp), %rdi
     movq %r14, %rsi
     movq %r15, %rdx
-    #call run_func
+    call run_func
 
     xorq %rax, %rax
     popq %r15
