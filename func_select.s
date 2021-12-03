@@ -2,7 +2,7 @@
 .extern printf
 
 .section .rodata
-print_format: .string "%s\n"
+print_format: .string "%s"
 scanf_char: .string " %c"
 scanf_int: .string " %d"
 invalid_option: .string "invalid option!\n"
